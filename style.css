@@ -1,0 +1,55 @@
+.converter__block {
+
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#converter__form {
+
+    display: flex;
+    padding: 20px;
+    border: 2px solid grey;
+    max-width: 500px;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#converter__form p {
+    color: black;
+    align-self: center;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result p {
+    display: block;
+}
+
+#result #currencies__result {
+    max-width: 150px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.put__up{
+
+    display: none;
+}
+
+.active{
+
+    display: inline-block;
+}
