@@ -58,9 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-        currencyRequest(actualCurrency[1].toUpperCase())
-            .then(response => response.json())
-            .then(rates => convert(neededCurrency, rates, amount));
+        currencyRequest(actualCurrency[1])
+            .then(response => {
+                if (!response.ok) {
+                    Promise.reject('Server error...');
+                    return;                }
+                return response.json();
+            })
+            .then(rates => convert(neededCurrency, rates, amount))
+            .catch(error => console.error('Возникла ошибка > ',error));
     };
 
     const putUpResult = (e) => {
