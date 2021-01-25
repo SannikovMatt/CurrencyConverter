@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="./style.css">
+
+<body>
+
+
+
+    <div class="converter__block">
+        <label id='converter' for="">
+            <form name='converter__form' id='converter__form'>
+
+                <p>Convert</p>
+
+                <div id='input__block'>
+                    <input id='amount' name='to__convert__amount' type="text">
+                    <select name="to__convert__currency" id="currencies__input">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="RUB">RUB</option>
+                    </select>
+                </div>
+                <p>Choose the currency you want convert to</p>
+
+
+                <div id='result__block'>
+
+                    <select name="currency__to__get" id="currencies__result">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="RUB">RUB</option>
+                    </select>
+                    <div class='result'>
+                        Result: <input class='output' name='result' type="" value="0" readonly>
+                        <button type="button" class='put__up'>^</button>
+                    </div>
+
+        </label>
+
+        </form>
+    </div>
+    <script src="./currecyConverter.js"></script>
+</body>
+
+</html>
